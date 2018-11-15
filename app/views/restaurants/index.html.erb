@@ -5,8 +5,8 @@
     <li><%= link_to r.name, restaurant_path(r.id) %>
       -
       <%= link_to "Edit", edit_restaurant_path(r.id) %>
-      -
-      <%= link_to "Delete", restaurant_path(r.id), method: :delete, data: { confirm: "Are you sure?" }  %>
+      - <i class: "fas fa-trash-alt"></i>
+      <%= link_to "delete", restaurant_path(r.id), method: :delete, data: { confirm: "Are you sure?" }  %>
       </li>
     <% end %>
   </ul>
